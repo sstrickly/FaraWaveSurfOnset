@@ -1,0 +1,13 @@
+function [ aon ] = Aon0SurfHFinOrd1( omega0 , k0 , epsilon , ~ , ~ , ~ , H , ~ , ~ )
+% Aon0SurfHFinOrd1 returns the dimensional onset acceleration for the first-order no-surfactant finite-depth case.
+
+aon = ( omega0^2 / k0 ) * ( ...
+    epsilon * ( ...
+        sqrt(2) * csch(H)^2 ...
+    ) ...
+    );
+
+
+end
+
+
